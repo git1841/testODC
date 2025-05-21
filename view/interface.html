@@ -1,0 +1,47 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemple d'interface modifiable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Liste des utilisateurs</h1>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Adresse e-mail</th>
+            <th>Adresse postale</th>
+            <th>Code d'accès</th>
+        </tr>
+        <tr>
+            <!-- Ajoutez des champs modifiables ici -->
+            <td></td>
+            <td><input type="text" id="firstName"></td>
+            <td><input type="text" id="lastName"></td>
+            <td><input type="email" id="emailAddress"></td>
+            <td><input type="text" id="streetAddress"></td>
+            <td></td>
+        </tr>
+    </table>
+    
+</body>
+</html>
+
+

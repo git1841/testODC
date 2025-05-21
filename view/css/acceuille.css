@@ -1,0 +1,240 @@
+/* Style général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fdf4;
+    color: #2e4d34;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #2e7d32;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 15px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar .logo h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c8e6c9;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a,
+.sidebar nav ul li h1 {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #388e3c;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-left: 240px;
+    padding: 30px;
+    width: 100%;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #2e7d32;
+    font-size: 1.8em;
+}
+
+/* Barre de recherche */
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #e8f5e9;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 128, 0, 0.1);
+}
+
+.search-bar input[type="text"] {
+    border: none;
+    background: transparent;
+    padding: 8px;
+    width: 200px;
+    outline: none;
+    font-size: 1em;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar .search-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Cartes */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-left: 5px solid #66bb6a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 128, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 16px rgba(0, 128, 0, 0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #2e7d32;
+}
+
+.card p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+.card .btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #388e3c;
+}
+
+
+/*
+.search-bar {
+    position: fixed; /* Ajoutez cette ligne 
+    top: 100px; /* Positionnez la barre à partir du haut (ajustez selon vos besoins) 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 600px; /* Adjust the width as needed 
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 28px;
+}
+
+.search-bar button{
+    border: none;
+    outline: none;
+    flex-grow: 0;
+    padding-left: 0px;
+    font-size: 28px;
+}
+.search-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+
+
+*/
+
+
+
+
+.search-bar {
+    position: fixed;
+    top: 50px;
+    right: 20px; /* Alignez la barre à droite avec un espace de 20px du bord droit */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: fit-content; /* Ajustez la largeur pour s'adapter au contenu */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.search-bar button {
+    border: none;
+    outline: none;
+    background: none; /* Enlevez le fond du bouton pour une meilleure intégration */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}

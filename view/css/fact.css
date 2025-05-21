@@ -1,0 +1,124 @@
+/* Style général */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0fef3;
+    color: #2e4d34;
+    display: flex;
+}
+
+/* Barre latérale */
+.sidebar {
+    width: 220px;
+    background-color: #2e7d32;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 15px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar .logo h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #c8e6c9;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #388e3c;
+}
+
+/* Contenu principal */
+.container {
+    margin-left: 240px;
+    padding: 30px;
+    width: 100%;
+}
+
+.container h1 {
+    color: #2e7d32;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,128,0,0.1);
+}
+
+thead {
+    background-color: #a5d6a7;
+    color: #1b5e20;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #f0fdf4;
+}
+
+td a {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-right: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Bouton Facture */
+td a:first-child {
+    background-color: #4caf50; /* Vert */
+}
+
+td a:first-child:hover {
+    background-color: #388e3c;
+}
+
+/* Bouton Historique */
+td a:last-child {
+    background-color: #2196f3; /* Bleu */
+}
+
+td a:last-child:hover {
+    background-color: #1565c0;
+}
+
+/* Message lorsqu’il n’y a aucun résultat */
+td[colspan] {
+    text-align: center;
+    padding: 15px;
+    color: #777;
+}

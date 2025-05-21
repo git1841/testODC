@@ -1,0 +1,121 @@
+/* Style global */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eef8fa;
+    color: #1b3b4a;
+    display: flex;
+}
+
+/* Barre latérale */
+.sidebar {
+    width: 220px;
+    background-color: #1565c0;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 15px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar .logo h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #bbdefb;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 15px 0;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: #0d47a1;
+}
+
+/* Contenu principal */
+.container {
+    margin-left: 240px;
+    padding: 30px;
+    width: 100%;
+}
+
+.container h1 {
+    color: #1565c0;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+/* Bouton Ajouter */
+.bouton {
+    margin-bottom: 20px;
+}
+
+.bouton a {
+    text-decoration: none;
+    color: white;
+    background-color: #2196f3;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.bouton a:hover {
+    background-color: #0d47a1;
+}
+
+/* Tableau des paiements */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,128,0.1);
+    margin-top: 10px;
+}
+
+thead {
+    background-color: #bbdefb;
+    color: #0d47a1;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #e3f2fd;
+}
+
+td a {
+    text-decoration: none;
+    color: #1565c0;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+td a:hover {
+    color: #0d47a1;
+}

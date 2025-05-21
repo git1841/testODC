@@ -1,0 +1,233 @@
+
+
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(219, 219, 219);;
+    color: #333;
+display: flex;
+    height: 100vh;
+}
+
+
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color:#22b043;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}
+
+.sidebar .logo {
+    text-align: center;
+font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+font-size: 18px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #28a745;
+    color: #fff;
+}
+
+/* Main content */
+.main-content {
+    margin-left: 250px;
+    padding: 30px;
+    width: 100%;
+}
+header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color:  #28a745;
+
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    margin-top:100px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color:  #28a745;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+ .card .btn {
+    background-color:  #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #28a745;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+}
+
+
+/*
+.search-bar {
+    position: fixed; /* Ajoutez cette ligne 
+    top: 100px; /* Positionnez la barre à partir du haut (ajustez selon vos besoins) 
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 600px; /* Adjust the width as needed 
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 28px;
+}
+
+.search-bar button{
+    border: none;
+    outline: none;
+    flex-grow: 0;
+    padding-left: 0px;
+    font-size: 28px;
+}
+.search-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+.search-bar {
+    position: fixed;
+    top: 100px;
+    right: 20px; /* Alignez la barre à droite avec un espace de 20px du bord droit */
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: fit-content; /* Ajustez la largeur pour s'adapter au contenu */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 28px;
+}
+
+.search-bar button {
+    border: none;
+    outline: none;
+    background: none; /* Enlevez le fond du bouton pour une meilleure intégration */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}

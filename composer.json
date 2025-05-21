@@ -1,0 +1,19 @@
+{
+    "name": "second/pjphp",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Second\\Pjphp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "second raymond",
+            "email": "secondraymond0@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.10"
+    }
+}

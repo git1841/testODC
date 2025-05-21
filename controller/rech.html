@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barre de recherche</title>
+    <style>
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.search-bar {
+    position: fixed; /* Ajoutez cette ligne */
+    top: 20px; /* Positionnez la barre à partir du haut (ajustez selon vos besoins) */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 600px; /* Adjust the width as needed */
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-icon:hover {
+    transform: scale(1.2);
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="search-bar">
+        <input type="text" placeholder="Recherche client...">
+        <img src="lopeb.ico" alt="Lope" class="search-icon">
+    </div>
+</body>
+</html>
+
+

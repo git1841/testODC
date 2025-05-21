@@ -1,0 +1,171 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteneur principal 
+.container {
+    width: 70%;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+*/
+.container {
+    width: 70%;
+    margin: 60px 120px 0px auto; /* haut, gauche, bas, droite */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Bouton Ajouter un Client */
+.bouton a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2ab33f;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.bouton a:hover {
+    background-color: #45a049;
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+ th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+td {
+    background-color: white;
+    color: #333;
+}
+
+/* Effet sur les lignes */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Actions Modifier et Supprimer */
+a {
+    text-decoration: none;
+    color: #28a745;
+    padding: 8px;
+    background-color: transparent;
+    border: 2px solid #28a745;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+a:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+a:active {
+    background-color: #218838;
+}
+
+/* Design mobile */
+@media (max-width: 768px) {
+    .container {
+         width: 95%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
+
+
+
+
+/* Sidebar 
+.sidebar {
+    width: 250px;
+    background-color:#22b043;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+}*/
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color:#22b043;
+    color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0; /* Ajout de cette ligne pour que la sidebar commence depuis le haut */
+}
+
+
+.sidebar .logo {
+    text-align: center;
+font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar nav ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+font-size: 18px;
+    display: block;
+}
+
+.sidebar nav ul li a:hover,
+.sidebar nav ul li a.active {
+    background-color: #28a745;
+    color: #fff;
+}
